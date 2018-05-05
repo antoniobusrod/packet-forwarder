@@ -1,0 +1,32 @@
+{
+  "name": "packet-forwarder",
+  "version": "1.0.0",
+  "description": "Virtual LoRa packet forwarder that forwards RF packets from API to a server through a IP/UDP link, and emits RF packets that are sent by the server.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "mocha"
+  },
+  "keywords": [
+    "LoRa",
+    "packet forwarder",
+    "packet",
+    "forwarder",
+    "LoRaWAN"
+  ],
+  "author": "Antonio Bustos <antoniobusrod@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "5.1.1",
+    "mock-udp": "0.1.1",
+    "standard": "11.0.1"
+  },
+  "dependencies": {
+    "debug": "3.1.0"
+  }
+}
