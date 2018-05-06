@@ -18,7 +18,22 @@ npm intall --save packet-forwarder
 
 ## Usage
 
-TODO
+Send an uplink to remote Network Server using Packet Forwarder protocol.
+
+```javascript
+const PacketForwarder = require('packet-forwarder')
+
+async sendFakeUplink() {
+  const gateway = 'DABBCCFFFF2A79CB'
+  const target = 'network-server.foo-company.local'
+  const port = 1234
+  const packetForwarder = new PacketForwarder(gateway, target, port)
+  const message = { foo: 'invalid-message' }
+  await packetForwarder.sendUplink(message)
+  await packetForwarder.close()
+}
+
+```
 
 ## Testing
 
