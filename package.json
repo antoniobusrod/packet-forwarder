@@ -1,6 +1,6 @@
 {
   "name": "packet-forwarder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Virtual LoRa packet forwarder that forwards RF packets from API to a server through a IP/UDP link, and emits RF packets that are sent by the server.",
   "main": "lib/index.js",
   "scripts": {
