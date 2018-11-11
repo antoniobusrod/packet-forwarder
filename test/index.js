@@ -31,7 +31,7 @@ describe('Packet forwarder integration tests', () => {
       .withArgs('udp4')
       .once()
       .returns(new UdpSocketMock())
-    const packetForwarder = new PacketForwarder(gateway, target, port)
+    const packetForwarder = new PacketForwarder({gateway, target, port})
     await packetForwarder.sendUplink({ foo: 'bar' })
     mock.verify()
     await packetForwarder.close()
