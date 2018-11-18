@@ -1,5 +1,7 @@
 # Packet Forwarder (Node.js)
 
+[![Build Status](https://travis-ci.org/antoniobusrod/packet-forwarder.svg?branch=master)](https://travis-ci.org/antoniobusrod/packet-forwarder)
+
 Virtual LoRa packet forwarder that forwards RF packets from API to a server through a IP/UDP link, and emits RF packets that are sent by the server. To be used for _Node.js_ applications.
 
 ## Getting Started
