@@ -20,6 +20,10 @@
   "engines": {
     "node": ">=8.9.4"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/antoniobusrod/packet-forwarder.git"
+  },
   "devDependencies": {
     "chai": "4.2.0",
     "mocha": "5.2.0",
