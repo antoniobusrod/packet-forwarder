@@ -1,6 +1,6 @@
 {
   "name": "packet-forwarder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Virtual LoRa packet forwarder that forwards RF packets from API to a server through a IP/UDP link, and emits RF packets that are sent by the server.",
   "main": "lib/index.js",
   "scripts": {
@@ -21,8 +21,8 @@
     "node": ">=8.9.4"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/antoniobusrod/packet-forwarder.git"
+    "type": "git",
+    "url": "https://github.com/antoniobusrod/packet-forwarder.git"
   },
   "devDependencies": {
     "chai": "4.2.0",
