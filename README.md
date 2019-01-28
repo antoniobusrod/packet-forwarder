@@ -25,7 +25,7 @@ Send an uplink to remote Network Server using Packet Forwarder protocol.
 ```javascript
 const PacketForwarder = require('packet-forwarder')
 
-async sendFakeUplink() {
+async function sendFakeUplink() {
   const gateway = 'DABBCCFFFF2A79CB'
   const target = 'network-server.foo-company.local'
   const port = 1234
