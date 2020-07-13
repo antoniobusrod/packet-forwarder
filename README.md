@@ -19,7 +19,8 @@ npm intall --save packet-forwarder
 
 ## Usage
 
-Send an uplink to remote Network Server using Packet Forwarder protocol. Fake gateway EUI, fake network server name and network server port have been used in the next usage example.
+Send an uplink to remote Network Server using Packet Forwarder protocol.
+Fake gateway EUI, fake network server and fake message content have been used in the next usage example.
 
 ```javascript
 const PacketForwarder = require('packet-forwarder')
