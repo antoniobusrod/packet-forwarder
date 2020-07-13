@@ -9,10 +9,6 @@ Virtual LoRa packet forwarder that forwards RF packets from API to a server thro
 In LoRaWAN, you need real gateways and real devices for your real test case.
 However, it is simpler to using a simulated gateway and simulated devices in order to choose the best LoRaWAN Network Server that fulfills your real requirements.
 
-### Prerequisites
-
-- Node.js v8.x
-
 
 ### Installation
 
@@ -32,8 +28,25 @@ async function sendFakeUplink() {
   const gateway = 'DABBCCFFFF2A79CB'
   const target = 'network-server.foo-company.local'
   const port = 1234
-  const packetForwarder = new PacketForwarder(gateway, target, port)
-  const message = { foo: 'invalid-message' }
+  const packetForwarder = new PacketForwarder({ gateway, target, port })
+  const message = {
+    rxpk: [{
+      time: '2018-05-01T12:00:00Z',
+      tmms: null,
+      tmst: 1525168800,
+      freq: 868300000,
+      chan: null,
+      rfch: 0,
+      stat: 0,
+      modu: 'LORA',
+      datr: 'SF8BW125',
+      codr: '4/5',
+      rssi: -97,
+      lsnr: 12,
+      size: 16,
+      data: 'aGZkKQAAAAIAAAAAAAAAAA==',
+    }]
+  }
   await packetForwarder.sendUplink(message)
   await packetForwarder.close()
 }
