@@ -13,7 +13,7 @@ However, it is simpler to using a simulated gateway and simulated devices in ord
 ### Installation
 
 ```sh
-npm intall --save packet-forwarder
+npm install --save packet-forwarder
 ```
 
 
