@@ -26,11 +26,11 @@
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "mocha": "5.2.0",
+    "mocha": "^10.2.0",
     "sinon": "7.1.1",
     "standard": "12.0.1"
   },
   "dependencies": {
-    "debug": "4.1.0"
+    "debug": "4.3.1"
   }
 }
